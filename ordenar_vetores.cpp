@@ -47,7 +47,7 @@ void gera_vetor_aleatorio(long *vetor, long n) {
 
 int main(){
 	
-	long n = 50000; // n controla o total de posições no vetor
+	long n = 9; // n controla o total de posições no vetor
 	long vetor[n];
 	
 	printf("Iniciando...\n\n");
