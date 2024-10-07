@@ -10,16 +10,21 @@
 #include <stdlib.h>
 #include "time.h"
 
+	long contarTrocas;
+	long contadorComparações;
+
 void insertionSort(long *vetor, long total) {
     // Laço externo percorre todos os elementos do array começando do segundo elemento 
     for (int i = 1; i < total; i++) {
         int elementoAtual = vetor[i];  // Guarda o elemento atual que será inserido na posição correta
         int j = i - 1;  // Variável para rastrear os elementos anteriores, começando pelo elemento à esquerda do atual
-
-        // Laço para mover os elementos maiores que o elementoAtual uma posição à frente
-        // COMPARAÇÃO: Verifica se o elemento anterior é maior que o elemento atual
-        while (j >= 0 && vetor[j] > elementoAtual) {
-            // TROCA: Mover o elemento arr[j] para a posição j+1 (deslocamento)
+		
+		while (true) {
+            contadorComparações++;  // Incrementa o contador sempre que o while é avaliado
+            if (j < 0 || vetor[j] <= elementoAtual) {
+                break;  // Sai do laço se a condição for falsa
+            }
+			contarTrocas++;
             vetor[j + 1] = vetor[j];  // Move o elemento para a direita
             j--;  // Decrementa j para continuar verificando os elementos à esquerda
         }
@@ -28,6 +33,20 @@ void insertionSort(long *vetor, long total) {
         vetor[j + 1] = elementoAtual;
     }
 }
+/*
+        // Laço para mover os elementos maiores que o elementoAtual uma posição à frente
+        // COMPARAÇÃO: Verifica se o elemento anterior é maior que o elemento atual
+        while (j >= 0 && vetor[j] > elementoAtual) {
+            // TROCA: Mover o elemento arr[j] para a posição j+1 (deslocamento)
+            vetor[j + 1] = vetor[j];  // Move o elemento para a direita
+            contarTrocas++;
+			j--;  // Decrementa j para continuar verificando os elementos à esquerda
+        }
+
+        // Insere o elemento atual na posição correta (logo após o último elemento menor)
+        vetor[j + 1] = elementoAtual;
+    }
+}*/
 
 void imprime_vetor(long *vetor, long total){
 	for(int i = 0; i < total; i++){
@@ -74,24 +93,27 @@ void gera_vetor_aleatorio(long *vetor, long n) {
 
 int main(){
 	
-	long n = 7; // n controla o total de posições no vetor
+	long n = 50000; // n controla o total de posições no vetor
 	long vetor[n];
 	
-	printf("Iniciando...\n\n");
+	//printf("Iniciando...\n\n");
 		
 	//gera_vetor_ordenado_ASC(&vetor[0], n);
-	//gera_vetor_ordenado_DESC(&vetor[0], n);
-	gera_vetor_aleatorio(&vetor[0], n);
+	gera_vetor_ordenado_DESC(&vetor[0], n);
+	//gera_vetor_aleatorio(&vetor[0], n);
 	
 	// imprime o vetor antes de ser ordenado
-	imprime_vetor(vetor, n);
+	//imprime_vetor(vetor, n);
 
     // chama a funcao para ordenar o vetor
     insertionSort(&vetor[0], n);
     // imprime o vetor depois de ordenado
-    imprime_vetor(vetor, n);
-		
-	printf("\nFinalizado!!!");
+    //imprime_vetor(vetor, n);
+
+	printf("Trocas: %ld\n", contarTrocas);
+	printf("Comparacoes: %ld\n", contadorComparações);
+
+	//printf("\nFinalizado!!!");
 	
 }
 
