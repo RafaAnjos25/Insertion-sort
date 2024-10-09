@@ -37,7 +37,7 @@ void insertionSort(long *vetor, long total) {
         // Laço para mover os elementos maiores que o elementoAtual uma posição à frente
         // COMPARAÇÃO: Verifica se o elemento anterior é maior que o elemento atual
         while (j >= 0 && vetor[j] > elementoAtual) {
-            // TROCA: Mover o elemento arr[j] para a posição j+1 (deslocamento)
+            // TROCA: Mover o elemento vetor[j] para a posição j+1 (deslocamento)
             vetor[j + 1] = vetor[j];  // Move o elemento para a direita
             contarTrocas++;
 			j--;  // Decrementa j para continuar verificando os elementos à esquerda
@@ -96,7 +96,6 @@ int main(){
 	long n = 50000; // n controla o total de posições no vetor
 	long vetor[n];
 	
-	//printf("Iniciando...\n\n");
 		
 	//gera_vetor_ordenado_ASC(&vetor[0], n);
 	//gera_vetor_ordenado_DESC(&vetor[0], n);
@@ -113,7 +112,7 @@ int main(){
 	printf("Trocas: %ld\n", contarTrocas);
 	printf("Comparacoes: %ld\n", contadorComparações);
 
-	//printf("\nFinalizado!!!");
+	
 	
 }
 
