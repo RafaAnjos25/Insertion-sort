@@ -1,0 +1,27 @@
+Ordenado
+
+"Vetor com 50.000 números Ordenados"
+
+0
+____________________
+invertido
+
+"Vetor com 50.000 números invertidos"
+
+1249975000
+
+____________________
+Aleatorio
+
+"Vetor com 50.000 números Aleatorio"
+
+599382270
+601576182
+601469841
+598604058
+599348152
+599377963
+600832563
+598678682
+601131627
+601624632 
