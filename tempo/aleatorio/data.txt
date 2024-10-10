@@ -1,0 +1,53 @@
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis2.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis3.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis4.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis5.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis6.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis7.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis8.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis9.txt
+guts-system% ./timeAleatorio                             
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis.txt 
+guts-system% ./timeAleatorio                            
+Trocas: 0
+Comparacoes: 0
+guts-system% gprof timeAleatorio gmon.out > analysis10.txt
+guts-system% 
+
+Aleatorio
+841.16 1
+841.16 2
+831.15 3
+841.16 4
+841.16 5
+831.15 6
+831.15 7
+831.15 8
+841.16 9
+831.15 10

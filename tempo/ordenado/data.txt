@@ -1,0 +1,54 @@
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ g++ -pg -o timeOrdenado main.cpp 
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis1.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis2.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis3.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis4.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis5.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis6.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis7.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis8.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis9.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ ./timeOrdenado 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ gprof timeOrdenado gmon.out > analysis10.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/ordenado$ 
+
+Ordenado
+0.55 1 
+0.52 2 
+0.53 3 
+0.52 4 
+0.52 5 
+0.52 6 
+0.53 7 
+0.55 8 
+0.52 9 
+0.52 10

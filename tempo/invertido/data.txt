@@ -1,0 +1,55 @@
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ g++ -pg -o timeInvertido main.cpp   
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis1.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis2.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis3.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis4.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis5.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis6.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis7.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis8.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis9.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ ./timeInvertido 
+Trocas: 0
+Comparacoes: 0
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ gprof timeInvertido gmon.out > analysis10.txt
+ubuntu@ubuntu:~/Documents/Insertion-sort/time/invertido$ 
+
+invertido
+1.08 1
+1.11 2
+1.07 3
+1.08 4
+1.08 5
+1.08 6
+1.12 7
+1.08 8
+1.09 9
+1.11 10
+
